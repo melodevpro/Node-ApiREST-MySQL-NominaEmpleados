@@ -6,7 +6,10 @@ export const db =createPool({
     user: 'admin',
     password: 'admin1969',
     port: 3306,
-    database: 'companydb'   
+    database: 'companydb',
+    waitForConnections: true,
+    connectionLimit: 10,
+    queueLimit: 0 
 })
 
 /*

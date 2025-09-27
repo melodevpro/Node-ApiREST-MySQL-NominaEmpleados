@@ -1,11 +1,9 @@
 
 import { Router } from "express";
+import { test } from '../controllers/index.controller.js';
 
 const router = Router();
 
-router.get('/test', async (req, res) => {
-    const [result] = await db.query('SELECT "pong" AS result');
-    res.json(result);
-})
+router.get('/test', test)
 
 export default router
