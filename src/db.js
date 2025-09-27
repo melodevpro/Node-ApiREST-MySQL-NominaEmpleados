@@ -12,8 +12,3 @@ export const db =createPool({
     queueLimit: 0 
 })
 
-/*
-db.query('SELECT + FROM empleados', (err, result) => {
-
-})
-*/
